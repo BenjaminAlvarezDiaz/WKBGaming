@@ -1,0 +1,31 @@
+/* SliderExperience.module.css */
+
+.mySwiper {
+    width:70%; /* Ancho del contenedor del Swiper */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; 
+    
+    
+  }
+  
+  /* Opcional: Estilos para los botones de navegación */
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #ffffff; /* Color del texto de los botones */
+    background-color: #000000; /* Color de fondo de los botones */
+    width: 50px; /* Ancho de los botones */
+    height: 50px; /* Altura de los botones */
+  }
+  
+  /* Opcional: Estilos para la paginación */
+  .swiper-pagination-progressbar {
+    background-color: #000000; /* Color de fondo de la barra de progreso de la paginación */
+  }
+  
+
+  .mySwiper img{
+    width: 100%;
+    height:auto;
+  }

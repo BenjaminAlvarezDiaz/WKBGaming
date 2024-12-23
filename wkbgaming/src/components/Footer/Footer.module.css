@@ -1,0 +1,179 @@
+footer {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 4em 4em 4em 4em;
+  background-color: #181818;
+  z-index: 999;
+}
+.wkb {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.wkb p {
+  text-align: start;
+  width: 20vh;
+}
+.container {
+  display: flex;
+  justify-content: space-around;
+  gap: 3em;
+}
+
+.services,
+.about,
+.experience,
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  padding: 1.2em 1.2em 1.2em 1.2em;
+}
+.socialMobile {
+  display: none;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.subtitle {
+  position: relative;
+  font-size: 1em;
+  font-weight: 600;
+  margin-bottom: 1em;
+}
+.subtitle::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 4.5px;
+  background-color: #793dea;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.subtitle:hover::after {
+  width: 100%;
+  animation: fadeInHover 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 50%;
+  }
+}
+
+@keyframes fadeInHover {
+  from {
+    opacity: 0;
+    width: 50%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  footer {
+    padding: 2em 2em 2em 2em;
+  }
+
+  .container {
+    gap: 1em;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  footer {
+    padding: 1em 1em 1em 1em;
+    font-size: 0.8em;
+  }
+
+  .container {
+    gap: 0.5em;
+  }
+
+  .options {
+    font-size: 0.7em;
+  }
+  .wkb p {
+    font-size: 0.7em;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  footer {
+    padding: 1em 1em 1em 1em;
+    font-size: 0.6em;
+  }
+
+  .container {
+    gap: 0.2em;
+  }
+
+  .options {
+    font-size: 0.6em;
+  }
+  .wkb img {
+    width: 10vh;
+  }
+  .wkb p {
+    font-size: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  footer {
+    justify-content: center;
+    flex-direction: column-reverse;
+    gap: 5vh;
+  }
+  .wkb {
+    display: none;
+  }
+  .options {
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4vh;
+    font-size: 1.9em;
+  }
+  .options img {
+    width: 70%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .options a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  .iconSocial {
+    font-size: 2rem;
+  }
+  .container {
+    display: none;
+  }
+  .socialMobile {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .subtitle::after {
+    height: 2.5px;
+  }
+}

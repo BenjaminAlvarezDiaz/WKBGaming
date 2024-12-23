@@ -1,0 +1,189 @@
+.about {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 140vh;
+  margin: 0 auto;
+  padding: 10vh 5vh;
+  animation: fadeInCon 1.2s ease-in-out;
+}
+
+.agency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2em 0;
+  width: 100%;
+}
+
+.agency img {
+  max-width: 60vh;
+  max-height: 60vh;
+}
+
+
+title, .title2{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.1rem;
+  
+  @media (max-width: 768px) {
+    font-size: 0.5rem;
+  }
+}
+
+.title2{
+  padding: 2em;
+}
+
+title h1::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 4.5px;
+  background-color: #793dea;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.title2 h1::after {
+  content: "";
+  display: block;
+  width: 70%;
+  height: 4.5px;
+  background-color: #7EC219;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  text-align: center;
+  padding: 0 2rem;
+}
+
+.text p {
+  font-size: 1.1rem;
+  text-align: left;
+}
+
+@keyframes fadeInCon {
+  from {
+    opacity: 0;
+    transform: translateX(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 70%;
+  }
+}
+
+.myCanvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+@media only screen and (max-width: 1600px) {
+  .about{
+    width: 80%;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .about{
+    width: 90%;
+  }
+  .text p {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .about{
+    width:100vh;
+  }
+  .myCanvas {
+    display: none;
+  }
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .about{
+    width: 90%;
+  }
+  .text p {
+    font-size: 0.9rem;
+  }
+  .agency img {
+    width:40%;
+  
+  }
+  
+}
+
+@media only screen and (max-width: 550px) {
+  .about{
+    width: 95%;
+  }
+  .text p {
+    font-size: 1rem;
+  }
+
+  .agency img {
+    width:40%;
+  
+  }
+  .title2{
+    padding: 0em 0em 0em 4em;
+  }
+}
+
+@media only screen and (max-width: 415px) {
+  .agency {
+   
+    padding: 1em 0;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+
+  .text {
+    padding: 0 1rem;
+  }
+  
+  
+  .agency img {
+    width: 100%;
+  }
+  
+  .text p {
+    font-size: 1.2rem;
+  }
+
+  title, .title2{
+    font-size: 0.4rem;
+  }
+}

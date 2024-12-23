@@ -1,0 +1,189 @@
+.form,
+.formSon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.formField {
+  width: 30vh;
+}
+
+.formField,
+.formFieldTxt {
+  border-radius: 5px;
+  border-color: white;
+  background-color: #151515;
+  color: white;
+  padding: 0.5rem;
+}
+.formFieldTxt {
+  resize: none;
+  height: 240px;
+  width: 575px;
+  
+}
+
+input:focus {
+  box-shadow: none;
+}
+.namEmail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80vh;
+  padding: 2vh;
+  gap: 10vh;
+}
+
+.inputName {
+  display: flex;
+  flex-direction: column;
+}
+.inputEmail {
+  display: flex;
+  flex-direction: column;
+}
+.input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 20px;
+}
+.errorMessage {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.input label {
+  font-weight: 500;
+  
+  font-size: 20px;
+}
+.inputEmail label {
+  font-weight: 500;
+  padding: 10px;
+  font-size: 20px;
+}
+.inputName label {
+  font-weight: 500;
+  padding: 10px;
+  font-size: 20px;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  background-color: #7ec219;
+  border-radius: 50px;
+  border: none;
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 0 40px rgba(126, 194, 25, 0.734);
+}
+
+.btn:hover {
+  background-color: #793dea;
+  color: white;
+  box-shadow: 0 0 40px rgba(122, 61, 234, 0.734);
+}
+.formSon {
+  border-radius: 10px;
+  background-color: #151515;
+}
+
+
+
+@media (max-width: 768px) {
+  .form {
+    width: 95%;
+    margin: 0 auto; 
+  }
+  .formSon {
+    width: 80%;
+  }
+  .input {
+    width: 100%;
+  }
+  .formFieldTxt {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .formField {
+    width: 100%;
+  }
+  .namEmail{
+    width: 100%;
+    gap: 10vh;
+    margin: 0 auto;
+
+  }
+
+  .input label {
+    font-size: 15px;
+  }
+  .inputEmail label {
+    font-size: 15px;
+  }
+  .inputName label {
+    font-size: 15px;
+  } 
+  .inputName {
+    width: 50%;
+  
+  }
+  .inputEmail {
+    width: 50%;
+
+  }
+
+  
+}
+
+
+@media (max-width: 550px) {
+  
+  .formSon {
+    width: 95%;
+  }
+  
+  .namEmail{
+    width: 100%;
+  }
+  .inputName {
+    width: 50%;
+  
+  }
+  .inputEmail {
+    width: 50%;
+
+  }
+
+  
+}
+
+
+
+
+@media (max-width: 420px) {
+  
+  
+  .inputName {
+    width: 40%;
+  
+  }
+  .inputEmail {
+    width: 40%;
+
+  }
+
+  
+}
+
+

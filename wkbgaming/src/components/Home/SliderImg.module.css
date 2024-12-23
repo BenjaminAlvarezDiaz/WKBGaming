@@ -1,0 +1,93 @@
+.continerSlider h5 {
+  font-size: 2rem;
+}
+
+/* .sliderWrapper {
+
+} */
+
+.slide {
+  position: relative;
+  transition: transform 0.3s ease;
+  outline: none;
+}
+
+.slide img {
+  width: 98%;
+  height: auto;
+  border-radius: 12px;
+}
+.slide h5 {
+  font-size: 1.2rem;
+}
+
+/* Estilos para las flechas */
+.slickArrow {
+  position: absolute;
+  bottom: 0px;
+  right: 15px;
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 2em;
+  border-radius: 50%;
+  color: white;
+  z-index: 2;
+}
+
+.slickNext {
+  right: 100px;
+}
+
+.slickPrev {
+  right: 150px;
+}
+
+/* animations */
+
+@keyframes slideIn {
+  0% {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes imgZoom {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.slide img {
+  filter: brightness(25%); /* Aplica un efecto de escala de grises */
+  opacity: 0.7; /* Reduce la opacidad de las imágenes */
+  transform: scale(0.95);
+}
+
+.slide.active img {
+  filter: brightness(100%); /* Elimina el efecto de escala de grises */
+  opacity: 1; /* Restaura la opacidad de las imágenes */
+  transform: scale(1);
+}
+
+@media only screen and (max-width: 768px) {
+  .continerSlider h5 {
+    font-size: 2rem;
+  }
+  .slide h5 {
+    font-size: 0.8rem;
+  }
+
+  .slickArrow {
+    display: none;
+  }
+  
+}

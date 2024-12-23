@@ -1,0 +1,103 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@700&display=swap" rel="stylesheet');
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  border-right: 2px solid rgba(255, 255, 255, 0.2);
+  padding: 0rem 2.5rem 0rem 1.5rem;
+  width:100vh;
+}
+.title h4 {
+  font-size: 1rem;
+  background: #793dea;
+  border-radius: 100px;
+  padding: 10px 20px;
+  text-align: left;
+  animation: fadeIn 0.6s ease-in-out;
+}
+.subtitle h4 {
+  font-size: 1rem;
+  border: #793dea 2px solid;
+  border-radius: 100px;
+  padding: 10px 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.title2 h4 {
+  font-size: 1rem;
+  background: #7EC219;
+  border-radius: 100px;
+  padding: 10px 20px;
+  color: black;
+  animation: fadeIn 0.6s ease-in-out;
+}
+.subtitle2 h4 {
+  font-size: 1rem;
+  border: #7EC219 2px solid;
+  border-radius: 100px;
+  padding: 10px 20px;
+  animation: fadeIn 0.6s ease-in-out;
+}
+
+.container p {
+  font-size: 1rem;
+  margin: 1rem 0;
+  text-align: left;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.container ul {
+  margin: 1rem 0;
+  padding: 0px 10px 0px 10px;
+  animation: fadeIn 1.2s ease-in-out;
+  text-align: left;
+}
+.blur:hover{
+  content: ""; /* Crea un pseudo-elemento antes del contenido real */
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.645); /* Establece un fondo semi-transparente */
+  backdrop-filter: brightness(1.2); /* Ajusta la luminosidad del filtro */
+  transform: scale(1.5); /* Escala la imagen al 120% del tamaño original */
+  transition: transform 0.3s ease; 
+}
+.imgInfo{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0em 1em 0em 1em;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    .container {
+      border:none;
+      padding: 0rem 2.5rem 0rem 1.5rem;
+      width:100%;
+    }
+    
+    .title h4,
+    .subtitle h4,
+    .title2 h4,
+    .subtitle2 h4,
+    .container p,
+    .container ul,
+    .imgInfo {
+      font-size: 1.1rem;
+    }
+  }
+
+  

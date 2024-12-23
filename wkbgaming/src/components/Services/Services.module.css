@@ -1,0 +1,147 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index:2;
+
+  padding: 10vh;
+  @media (max-width: 768px) {
+    padding: 6rem 0;
+  }
+}
+
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  gap: 2rem;
+  padding: 0 2rem;
+  max-width: 1200px;
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+  }
+}	
+.title,
+.title2,
+.title3 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 1.1rem;
+  @media (max-width: 768px) {
+    font-size: 0.6rem;
+  }
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 5rem;
+}
+.card {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 1200px;
+  height: 100%;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.title h1 {
+  position: relative;
+}
+
+.title h1::after {
+  content: "";
+  display: block;
+  width: 28%;
+  height: 4.5px;
+  background-color: #793dea;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.title2 h1::after {
+  content: "";
+  display: block;
+  width: 28%;
+  height: 4.5px;
+  background-color: #8b8b8b;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+.title3 h1::after {
+  content: "";
+  display: block;
+  width: 28%;
+  height: 4.5px;
+  background-color: #7ec219;
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 28%;
+  }
+}
+
+
+@keyframes fadeInM {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  .canvas{
+    display: none;
+  }
+  .title,
+  .title2,
+  .title3 {
+    font-size: 0.8rem;
+  }
+
+  .title h1::after {
+    content: "";
+    display: block;
+    width: 0%;
+    animation: none;
+  }
+  
+  .title2 h1::after {
+    content: "";
+    display: block;
+    width: 0%;
+    animation: none;
+  }
+  
+  .title3 h1::after {
+    content: "";
+    display: block;
+    width: 0%;
+    animation: none;
+  
+  }
+}

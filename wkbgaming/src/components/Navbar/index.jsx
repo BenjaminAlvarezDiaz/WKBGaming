@@ -1,0 +1,54 @@
+import React, { useState } from "react";
+import logoWKB from "../../assets/WKB LOGOS/WKB GROUP-01.svg";
+import Style from "./Navbar.module.css";
+import { HiOutlineMail } from "react-icons/hi";
+
+const Navbar = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+  const handleMenutoggle = () => {
+    setMenuOpen(!menuOpen);
+  };
+
+  return (
+    <div className={Style.navbar}>
+      <nav>
+        <a href="/">
+          <img src={logoWKB} alt="logoWKB" />
+        </a>
+        <button className={Style.hamburger} onClick={handleMenutoggle}>
+          <span className={menuOpen ? Style.active : ""}></span>
+          <span className={menuOpen ? Style.active : ""}></span>
+          <span className={menuOpen ? Style.active : ""}></span>
+        </button>
+        <ul className={menuOpen ? Style.open : ""}>
+          <li>
+            <a href="/services">Services</a>
+          </li>
+          <li>
+            <a href="/about">About Us</a>
+          </li>
+          <li>
+            <a href="/experience">Experience</a>
+          </li>
+          {/* <li>
+            <a href="/blog">Blog</a>
+          </li> */}
+          <li>
+            <a href="/contact" className={Style.contact}>
+              <HiOutlineMail  />
+              <span>Contact</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://wkbmeet.com/" className={Style.meeting}>
+              <span>Meeting</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  );
+};
+
+export default Navbar
