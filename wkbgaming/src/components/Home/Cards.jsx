@@ -27,7 +27,6 @@ const Card = () => {
         <div className={styles.card}>
           <div className={styles.cardContent}>
             <h5>Marketing & Communication</h5>
-            
           </div>
           <div className={styles.bottomBorder}>
             <Slider {...settings} className={styles.slider}>

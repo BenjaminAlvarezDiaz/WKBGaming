@@ -23,10 +23,10 @@ const Navbar = () => {
         </button>
         <ul className={menuOpen ? Style.open : ""}>
           <li>
-            <a href="/services">Services</a>
+            <a href="/services">Servicios</a>
           </li>
           <li>
-            <a href="/about">About Us</a>
+            <a href="/about">Sobre Nosotros</a>
           </li>
           <li>
             <a href="/experience">Experience</a>

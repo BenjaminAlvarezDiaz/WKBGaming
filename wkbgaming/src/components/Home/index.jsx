@@ -3,11 +3,13 @@ import video from "../../assets/videoHome.mp4";
 import background from "../../assets/teamwork.svg";
 import styles from "./Home.module.css";
 import Cards from "./Cards";
+import ServiceCard from "../ServiceCard/ServiceCard";
 import SliderImg from "./SliderImg";
 import SliderBrands from "./SliderBrands";
 import Contact from "../Contact";
 import CanvasBackground from "../CanvasBackground";
 import SwaiperTools from "./SwiperTools";
+import SwiperIcons from "./SwiperIcons";
 import Announcement from "./Announcement"
 const Home = () => {
   return (
@@ -47,39 +49,39 @@ const Home = () => {
               </span>
             </h4>
             <br />
-            La Inteligencia Artificial suena innovadora, pero su éxito depende de un elemento clave: {" "}
+            La Inteligencia Artificial promete innovación, pero su verdadero valor depende de un recurso clave: {" "}
             <span className={styles.highlight}>
               tus datos.
             </span>
             <br />
-            La calidad, el orden y la estructura de la información en tu empresa son fundamentales, ya que los datos son el motor de la IA.
+            Si tus procesos son desordenados o manuales, tu empresa pierde tiempo y oportunidades.
             <br /> 
             <br />
-            Con IA, podés transformar información en texto, imágenes o incluso en acciones automatizadas,
-            como si un agente actuara como un gerente o supervisor. 
+            Con la IA, podés convertir datos en texto, 
+            imágenes o acciones automatizadas que optimizan tareas repetitivas como reportes, 
+            correos, o validación de información.
             <br />
-            Pero no se trata solo de tecnología de moda; se trata de {" "}
-            <span className={styles.highlight2}> reemplazar procesos repetitivos </span>
-            {" "} con precisión y eficiencia: informes, envíos de emails, verificación de datos, y más.
-            <br />
-            <br />
-            El primer paso es identificar tus flujos de trabajo y analizar cómo gestionás la {" "} 
-            <span className={styles.highlight3}> información actualmente, </span>
-            {" "} ya sea en Excel, Google Sheets o un CRM.
-            <br />
-            Si ya usás estas herramientas, estás listo para conectar un motor de IA que lleve tu empresa al
-            {" "} <span className={styles.highlight2}> siguiente nivel. </span> {" "}
+            No es solo tecnología, es {" "}
+            <span className={styles.highlight2}> eficiencia real. </span>
+            {" "}
             <br />
             <br />
-            Las herramientas que usas, integradas, sincronizadas y automatizadas:
+            Las herramientas que usas, {" "}
+            <span className={styles.highlight}>integradas</span>
+            , {" "} 
+            <span className={styles.highlight3}> sincronizadas </span>
+            {" "} y {" "}
+            <span className={styles.highlight2}> automatizadas</span>
+            :
+            <br />
+            <br />
           </p>
         </div>
-        <SwaiperTools />
       </article>
-
+      <SwiperIcons />
       <div className={styles.allServices}>
         <h2>Nuestros servicios</h2>
-        <Cards />
+        <ServiceCard />
       </div>
 
       <div className={styles.SliderImg}>

@@ -12,26 +12,29 @@ const About = () => {
       <div className={styles.agency}>
         <div className={styles.text}>
           <title>
-            <h1>The Agency</h1>
+            <h1>Nosotros somos. . .</h1>
           </title>
 
           <p>
-            Today, most businesses understand that social media is an essential
-            part of any B2B and B2C marketing mix. Where they struggle, is
-            finding the right approach. <br /> Level up your social media
-            presence – without the guesswork! <br /> We help brands use social
-            media to their advantage using our data-driven strategies and
-            winning social media marketing and advertising campaigns. <br />{" "}
-            Without a strategy, you might end up flooding your social media
-            channels with fluffy content. It’s all too easy to focus on
-            producing a lot of content, rather than quality content.
+            <h2>Tus aliados tecnológicos</h2>
+            Trabajamos con robots, pero pensamos como humanos. 
+            Diseñamos soluciones personalizadas que se adaptan a tu industria, necesidades y metas.
+            <br />
+            <h2>Parte de tu equipo</h2>
+            Nos sumamos a tu equipo como si fuéramos uno más. <br /> 
+            Queremos conocer a fondo tus procesos para convertirnos en tu área de inteligencia artificial.
+            <br />
+            <h2>Innovación que funciona</h2>
+            La IA no es solo una tendencia; es una herramienta para transformar lo rutinario. <br />
+            Automatizamos tareas de siempre para que te enfoques en descubrir nuevas oportunidades. <br />
+            ¡Poné el piloto automático y despejá el camino hacia la innovación!
           </p>
         </div>
         <img src={Bear2} alt="bear" />
       </div>
       <div>
-        <title className={styles.title2}><h1>The team</h1></title>
-        <CardTeam />
+        <h1>¿ Estás listo para dar un salto a la innovación ?</h1>
+        <h2>Reserva una llamada con nosotros.</h2>
       </div>
       
     </div>

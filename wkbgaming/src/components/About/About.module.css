@@ -109,6 +109,9 @@ title h1::after {
   .text p {
     font-size: 1rem;
   }
+  title, .title2 {
+    font-size: 1rem;
+  }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -116,6 +119,9 @@ title h1::after {
     width: 90%;
   }
   .text p {
+    font-size: 0.9rem;
+  }
+  title, .title2 {
     font-size: 0.9rem;
   }
 }
@@ -126,6 +132,13 @@ title h1::after {
   }
   .myCanvas {
     display: none;
+  }
+  title, .title2 {
+    font-size: 0.5rem;
+  }
+  .agency img {
+    width:40%;
+  
   }
 }
 
@@ -142,8 +155,17 @@ title h1::after {
     width:40%;
   
   }
+  title, .title2 {
+    font-size: 0.5rem;
+  }
   
 }
+
+/*@media only screen and (max-width: 650px) {
+  title, .title2 {
+    font-size: 0.4rem;
+  }
+}*/
 
 @media only screen and (max-width: 550px) {
   .about{

@@ -17,6 +17,7 @@ import agency2 from "../../../assets/Tools/Contenido y Agencia-1.png";
 import video1 from "../../../assets/Tools/Video Animación.png";
 import video2 from "../../../assets/Tools/Video Animación-1.png";
 
+
 // Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";

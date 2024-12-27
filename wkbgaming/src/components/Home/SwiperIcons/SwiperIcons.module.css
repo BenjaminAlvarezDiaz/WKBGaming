@@ -1,0 +1,89 @@
+.rectangles {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 1em;
+    margin: 0 auto;
+    padding: 2em 2em 2em 2em;
+}
+
+.rectangle {
+    position: relative;
+    width: 20vh;
+    height: 15vh;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: black;
+    border: 3px solid rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.images {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 19vh;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: black;
+    border: 3px solid rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.rectangle:hover {
+    border-color:#7EC219;
+}
+  
+.rectangle img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    padding: 0.6rem 0.6rem;
+}
+
+.sample-slider .swiper-wrapper{
+    transition-timing-function: linear;
+}
+
+@media only screen and (max-width: 1600px) {
+    /* Styles here */
+    .rectangle {
+      width: 50%;
+      padding: 0;
+    }
+}
+  
+@media screen and (max-width: 1000px) {
+  
+.rectangle {
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+  
+.rectangle {
+      width: 100%;
+      height: 100%;
+    }
+}
+  
+  
+  
+@media screen and (max-width: 415px) {
+    .squares {
+        width: 100%;
+        height: 100%;
+        padding: 1vh;
+        flex-wrap: wrap;
+        gap: 0.5em;
+    }
+    .square {
+        width: 45%;
+        height: 45%;
+    }
+}
