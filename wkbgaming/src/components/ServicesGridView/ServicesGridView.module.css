@@ -1,0 +1,126 @@
+
+.container {
+    padding: 20px;
+}
+
+.services {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1.1rem;
+    @media (max-width: 768px) {
+        font-size: 0.6rem;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+      width: 0%;
+    }
+    to {
+      opacity: 1;
+      width: 48%;
+    }
+  }
+  
+  
+@keyframes fadeInM {
+    from {
+      opacity: 0;
+      width: 0%;
+    }
+    to {
+      opacity: 1;
+      width: 100%;
+    }
+}
+
+.services h1 {
+    position: relative;
+    margin-block-start: 0.37em;
+    margin-block-end: 0.37em;
+}
+  
+.services h1::after {
+    content: "";
+    display: block;
+    width: 48%;
+    height: 4.5px;
+    background-color: #793dea;
+    animation: fadeIn 1.2s ease-in-out;
+}
+
+.servicesDescription {
+    text-align: left;
+}
+
+.gridContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columnas */
+    gap: 10px;
+}
+  
+.gridItem {
+    background-color: transparent;
+    border-radius: 10px;
+    border: 3px solid #793dea;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    transition: all 0.3s ease;
+    padding: 20px;
+}
+  
+/* Efecto al pasar el cursor */
+.gridItem:hover {
+    transform: scale(1.2); /* Aumenta el tamaño */
+    z-index: 1; /* Trae el cuadrado al frente */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: black;
+    border: 3px solid #7ec219;
+}
+
+/* Contenido dentro del grid-item */
+.content {
+    text-align: center;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+  
+/* Título siempre visible */
+.title {
+    transform: translateY(30px);
+    font-size: 1.2em;
+    margin: 0;
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+  
+/* Descripción oculta inicialmente */
+.description {
+    opacity: 0;
+    transform: translateY(10px); /* Posición inicial */
+    font-size: 0.9em;
+    margin: 0;
+}
+
+/* Cambios al pasar el cursor */
+.gridItem:hover .content {
+    justify-content: flex-start; /* Mover el contenido hacia arriba */
+
+}
+  
+.gridItem:hover .title {
+    transform: translateY(0px); /* Mover el título hacia arriba */
+    font-size: 1.1em; /* Ajustar el tamaño del título */
+    transition: opacity 0.2s ease, transform 0.2s ease;
+    padding-bottom: 10px;
+}
+  
+/* Mostrar la descripción al pasar el cursor */
+.gridItem:hover .description {
+    opacity: 1;
+    transform: translateY(0); /* Posición final */
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}

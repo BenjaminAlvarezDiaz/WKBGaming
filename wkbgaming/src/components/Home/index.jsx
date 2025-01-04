@@ -65,34 +65,34 @@ const Home = () => {
             <span className={styles.highlight2}> eficiencia real. </span>
             {" "}
             <br />
-            <br />
-            Las herramientas que usas, {" "}
-            <span className={styles.highlight}>integradas</span>
-            , {" "} 
-            <span className={styles.highlight3}> sincronizadas </span>
-            {" "} y {" "}
-            <span className={styles.highlight2}> automatizadas</span>
-            :
-            <br />
-            <br />
           </p>
         </div>
       </article>
+      <h2>
+        Las herramientas que usas, {" "}
+        <span className={styles.highlight}>integradas</span>
+        , {" "} 
+        <span className={styles.highlight3}> sincronizadas </span>
+        {" "} y {" "}
+        <span className={styles.highlight2}> automatizadas</span>
+        :
+      </h2>
+      <br />
       <SwiperIcons />
       <div className={styles.allServices}>
         <h2>Nuestros servicios</h2>
         <ServiceCard />
       </div>
 
-      <div className={styles.SliderImg}>
+      {/*<div className={styles.SliderImg}>
         <SliderImg />
-      </div>
+      </div>*/}
       <div>
        <a  href="https://wkbmeet.com/" className={styles.btnMeeting}> <button>Schedule Meeting</button></a>
       </div>
-      <div className={styles.SliderBrands}>
+      {/*<div className={styles.SliderBrands}>
         <SliderBrands />
-      </div>
+      </div>*/}
       {/* <div>
         <SwiperBrands />
       </div> */}

@@ -11,6 +11,7 @@ import Contact from  "./components/Contact"
 import Privacy from "./components/Privacy";
 import Blog from "./components/Blog"
 import Announcement from "./components/Home/Announcement"
+import ServicesGridView from "./components/ServicesGridView";
 
 function App() {
   console.log("Developed by:Luis Fernando Goytia Cabezas {Full Stack Developer}");
@@ -25,7 +26,8 @@ function App() {
         <div className="content">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/services" element={<Services />} />
+            {/*<Route path="/services" element={<Services />} />*/}
+            <Route path="/services" element={<ServicesGridView />} />
             <Route path="/about" element={<About />} />
             <Route path="/experience" element={<Experience />} />
             <Route path="/contact" element={<Contact />} />

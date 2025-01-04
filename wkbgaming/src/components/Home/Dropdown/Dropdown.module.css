@@ -1,0 +1,65 @@
+.expandableDropdown {
+  border: 3px solid #793dea;
+  border-radius: 3px;
+  width: 400px;
+  height: auto; /* Altura inicial */
+  transition: height 0.3s ease;
+  overflow: hidden;
+}
+
+/* Incrementar la altura cuando el dropdown está abierto */
+.expandableDropdown:hover {
+  height: 300px; /* Altura expandida */
+}
+
+/* Dropdown básico */
+.dropdown {
+  position: relative;
+}
+
+.dropdownTrigger {
+  background-color: #793dea;
+  padding: 2px 10px;
+  border-radius: 0px;
+  cursor: pointer;
+  text-align: left;
+  color: black;
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.dropdownMenu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 5px 10px;
+  opacity: 0;
+  text-align: left;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  z-index: 10;
+}
+
+.dropdownMenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dropdownMenu li {
+  padding: 10px 20px;
+  color: #333;
+  cursor: pointer;
+}
+
+.dropdownMenu li:hover {
+  background-color: #f4f4f4;
+}
+
+/* Mostrar el menú y activar la expansión */
+.expandableDropdown:hover .dropdownMenu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
