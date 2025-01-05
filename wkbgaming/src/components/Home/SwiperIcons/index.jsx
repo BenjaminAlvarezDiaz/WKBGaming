@@ -23,7 +23,11 @@ function SwiperIcons () {
                     className="sample-slider"
                     modules={[Autoplay]}
                     loop={true}
-                    autoplay={{delay:0}}
+                    autoplay={{
+                        delay:0, 
+                        disableOnInteraction: false,
+                        pauseOnMouseEnter: true,
+                    }}
                     slidesPerView={7}
                     speed={3000}
                 >

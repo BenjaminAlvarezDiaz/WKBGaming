@@ -88,7 +88,7 @@ const Home = () => {
         <SliderImg />
       </div>*/}
       <div>
-       <a  href="https://wkbmeet.com/" className={styles.btnMeeting}> <button>Schedule Meeting</button></a>
+       <a  href="https://wkbmeet.com/" className={styles.btnMeeting}> <button>Programar reunión</button></a>
       </div>
       {/*<div className={styles.SliderBrands}>
         <SliderBrands />

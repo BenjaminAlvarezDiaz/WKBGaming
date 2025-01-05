@@ -1,6 +1,6 @@
 
 .container {
-    padding: 20px;
+    padding: 40px;
 }
 
 .services {
@@ -76,7 +76,7 @@
   
 /* Efecto al pasar el cursor */
 .gridItem:hover {
-    transform: scale(1.2); /* Aumenta el tamaño */
+    transform: scale(1.09); /* Aumenta el tamaño */
     z-index: 1; /* Trae el cuadrado al frente */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     background-color: black;
@@ -123,4 +123,229 @@
     opacity: 1;
     transform: translateY(0); /* Posición final */
     transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+@media (max-width: 1200px) {
+
+    .title {
+        transform: translateY(30px);
+        font-size: 1.1em;
+        margin: 0;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .description {
+        opacity: 0;
+        transform: translateY(10px);
+        font-size: 0.9em;
+        margin: 0;
+    }
+
+    .gridItem:hover .title {
+        transform: translateY(0px); /* Mover el título hacia arriba */
+        font-size: 0.9em; /* Ajustar el tamaño del título */
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        padding-bottom: 10px;
+    }
+      
+    /* Mostrar la descripción al pasar el cursor */
+    .gridItem:hover .description {
+        opacity: 1;
+        transform: translateY(0); /* Posición final */
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+}
+
+@media (max-width: 1000px) {
+
+    .title {
+        transform: translateY(50px);
+        font-size: 1em;
+        margin: 0;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .description {
+        opacity: 0;
+        transform: translateY(10px);
+        font-size: 0.8em;
+        margin: 0;
+    }
+
+    .gridItem:hover .title {
+        transform: translateY(0px); /* Mover el título hacia arriba */
+        font-size: 0.9em; /* Ajustar el tamaño del título */
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        padding-bottom: 10px;
+    }
+      
+    /* Mostrar la descripción al pasar el cursor */
+    .gridItem:hover .description {
+        opacity: 1;
+        transform: translateY(0); /* Posición final */
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .title {
+        transform: translateY(50px);
+        font-size: 1em;
+        margin: 0;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .description {
+        opacity: 0;
+        transform: translateY(10px);
+        font-size: 0.7em;
+        margin: 0;
+    }
+
+    .gridItem:hover .title {
+        transform: translateY(0px); /* Mover el título hacia arriba */
+        font-size: 0.9em; /* Ajustar el tamaño del título */
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        padding-bottom: 10px;
+    }
+      
+    /* Mostrar la descripción al pasar el cursor */
+    .gridItem:hover .description {
+        opacity: 1;
+        transform: translateY(0); /* Posición final */
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .title {
+        transform: translateY(30px);
+        font-size: 0.9em;
+        margin: 0;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .description {
+        opacity: 0;
+        transform: translateY(10px);
+        font-size: 0.6em;
+        margin: 0;
+    }
+
+    .gridItem:hover .title {
+        transform: translateY(0px); /* Mover el título hacia arriba */
+        font-size: 0.7em; /* Ajustar el tamaño del título */
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        padding-bottom: 10px;
+    }
+      
+    /* Mostrar la descripción al pasar el cursor */
+    .gridItem:hover .description {
+        opacity: 1;
+        transform: translateY(0); /* Posición final */
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .title {
+        transform: translateY(30px);
+        font-size: 0.8em;
+        margin: 0;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .description {
+        opacity: 0;
+        transform: translateY(10px);
+        font-size: 0.5em;
+        margin: 0;
+    }
+
+    .gridItem:hover .title {
+        transform: translateY(0px); /* Mover el título hacia arriba */
+        font-size: 0.6em; /* Ajustar el tamaño del título */
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        padding-bottom: 10px;
+    }
+      
+    /* Mostrar la descripción al pasar el cursor */
+    .gridItem:hover .description {
+        opacity: 1;
+        transform: translateY(0); /* Posición final */
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+}
+
+@media (max-width: 530px) {
+
+    .container {
+        padding: 0px;
+    }
+
+    .title {
+        transform: translateY(30px);
+        font-size: 0.8em;
+        margin: 0;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .description {
+        opacity: 0;
+        transform: translateY(10px);
+        font-size: 0.5em;
+        margin: 0;
+    }
+
+    .gridItem:hover .title {
+        transform: translateY(0px); /* Mover el título hacia arriba */
+        font-size: 0.6em; /* Ajustar el tamaño del título */
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        padding-bottom: 10px;
+    }
+      
+    /* Mostrar la descripción al pasar el cursor */
+    .gridItem:hover .description {
+        opacity: 1;
+        transform: translateY(0); /* Posición final */
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+}
+
+@media (max-width: 415px) {
+
+    .container {
+        margin: 100px 0px;
+    }
+
+    .title {
+        transform: translateY(30px);
+        font-size: 0.8em;
+        margin: 0;
+        transition: opacity 0.2s ease, transform 0.2s ease;
+    }
+
+    .description {
+        opacity: 0;
+        transform: translateY(10px);
+        font-size: 0.5em;
+        margin: 0;
+    }
+
+    .gridItem:hover .title {
+        transform: translateY(0px); /* Mover el título hacia arriba */
+        font-size: 0.6em; /* Ajustar el tamaño del título */
+        transition: opacity 0.2s ease, transform 0.2s ease;
+        padding-bottom: 10px;
+    }
+      
+    /* Mostrar la descripción al pasar el cursor */
+    .gridItem:hover .description {
+        opacity: 1;
+        transform: translateY(0); /* Posición final */
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
 }

@@ -367,6 +367,10 @@
     padding: 0;
   }
 
+  .overlay h1 {
+    font-size: 2.5rem;
+  }
+
   h2 {
     padding: 0px 80px;
     text-align: center;
@@ -395,6 +399,10 @@
     display: none;
   }
 
+  .overlay h1 {
+    font-size: 2.3rem;
+  }
+
   h2 {
     padding: 0px 80px;
     text-align: center;
@@ -420,6 +428,15 @@
   .SliderImg h1 {
     font-size: 1.5rem;
   }
+
+  .overlay h1 {
+    font-size: 1.9rem;
+  }
+
+  h2 {
+    padding: 0px 20px;
+    text-align: center;
+  }
 }
 
 @media (max-width: 550px) {
@@ -437,7 +454,12 @@
   }
 
   .overlay h1 {
-    font-size: 2.2rem;
+    font-size: 1.3rem;
+  }
+
+  h2 {
+    padding: 0px 20px;
+    text-align: center;
   }
 }
 
@@ -484,5 +506,10 @@
     overflow: hidden;
     width: 100%;
     padding: 1rem 0rem;
+  }
+
+  h2 {
+    padding: 0px 0px;
+    text-align: center;
   }
 }
