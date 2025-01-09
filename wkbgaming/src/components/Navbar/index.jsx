@@ -28,21 +28,21 @@ const Navbar = () => {
           <li>
             <a href="/about">Sobre Nosotros</a>
           </li>
-          <li>
+          {/*<li>
             <a href="/experience">Experience</a>
-          </li>
+          </li>*/}
           {/* <li>
             <a href="/blog">Blog</a>
           </li> */}
           <li>
             <a href="/contact" className={Style.contact}>
               <HiOutlineMail  />
-              <span>Contact</span>
+              <span>Contacto</span>
             </a>
           </li>
           <li>
             <a href="https://wkbmeet.com/" className={Style.meeting}>
-              <span>Meeting</span>
+              <span>Reunión</span>
             </a>
           </li>
         </ul>

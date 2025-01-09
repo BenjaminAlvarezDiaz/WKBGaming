@@ -5,13 +5,13 @@ import emailjs from "@emailjs/browser";
 import Styles from "./Forms.module.css";
 
 const validationSchema = Yup.object().shape({
-  name: Yup.string().required("This field is required"),
+  name: Yup.string().required("Este campo es requerido"),
   email: Yup.string()
-    .email("Invalid email address")
-    .required("This field is required"),
+    .email("¡Dirección de email invalida!")
+    .required("Este campo es requerido"),
   message: Yup.string()
-    .min(20, "Minimum 20 characters")
-    .required("This field is required"),
+    .min(20, "Minimo 20 caracteres")
+    .required("Este campo es requerido"),
 });
 
 export const Forms = () => {
@@ -53,7 +53,7 @@ export const Forms = () => {
           <div className={Styles.formSon}>
             <div className={Styles.namEmail}>
               <div className={Styles.inputName}>
-                <label htmlFor="name">Your Name</label>
+                <label htmlFor="name">Tu nombre</label>
                 <Field
                   className={Styles.formField}
                   type="text"
@@ -67,7 +67,7 @@ export const Forms = () => {
                 />
               </div>
               <div className={Styles.inputEmail}>
-                <label htmlFor="email">Your Email</label>
+                <label htmlFor="email">Tu email</label>
                 <Field
                   className={Styles.formField}
                   type="email"
@@ -82,7 +82,7 @@ export const Forms = () => {
               </div>
             </div>
             <div className={Styles.input}>
-              <label htmlFor="message">Your Message</label>
+              <label htmlFor="message">Tu mensaje</label>
               <Field
                 className={Styles.formFieldTxt}
                 as="textarea"
@@ -106,7 +106,7 @@ export const Forms = () => {
             }
             className={Styles.btn}
           >
-            Contact
+            Contactar
           </button>
         </Form>
       )}

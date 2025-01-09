@@ -12,7 +12,7 @@
     color: black;
     font-weight: bold;
     font-size: 1.1rem;
-    text-align: left;
+    text-align: center;
     padding: 2px 10px;
 }
 
@@ -31,21 +31,27 @@
 
 .serviceCardTitle {
     background-color: #793dea;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 .serviceCardTitle2 {
     background-color: #9a9a9a;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 .serviceCardTitle3 {
     background-color: #7ec219;
+    padding-top: 5px;
+    padding-bottom: 10px;
 }
 
 .serviceCard,
 .serviceCard2,
 .serviceCard3 {
-    border-radius: 5px;
+    border-radius: 10px;
     width: 400px;
-    height: auto; /* Altura inicial */
-    transition: height 0.3s ease;
+    height: 50px; /* Altura inicial */
+    transition: height 0.5s ease;
     overflow: hidden;
 }
 
@@ -91,7 +97,7 @@
     text-align: left;
     visibility: hidden;
     transform: translateY(-10px);
-    transition: all 1s ease;
+    transition: all 0.3s ease;
     z-index: 10;
 }
 

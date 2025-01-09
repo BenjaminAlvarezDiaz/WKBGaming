@@ -7,8 +7,8 @@ import CanvasBackground from '../CanvasBackground';
     return (
         <div id="contact" className={Styles.containerContact}>
             <CanvasBackground className={Styles.myCanvas} />
-            <h1>Say hello to your future team!</h1>
-            <div className={Styles.subtitle}><p>Let's create what's next.</p></div>
+            <h1>Saluda a tu futuro equipo</h1>
+            <div className={Styles.subtitle}><p>Comencemos a crear lo que sigue.</p></div>
             <div className={Styles.form}><Forms/></div>
         </div>
     )

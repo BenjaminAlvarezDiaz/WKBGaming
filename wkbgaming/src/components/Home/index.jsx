@@ -40,6 +40,9 @@ const Home = () => {
           </div>
         </div>
       </div>
+      <div>
+        <a  href="https://wkbmeet.com/" className={styles.btnMeeting}> <button>Programar reunión</button></a>
+      </div>
       <article className={styles.article}>
         <div className={styles.textcontainer}>
           <p className={styles.text}>
@@ -87,9 +90,6 @@ const Home = () => {
       {/*<div className={styles.SliderImg}>
         <SliderImg />
       </div>*/}
-      <div>
-       <a  href="https://wkbmeet.com/" className={styles.btnMeeting}> <button>Programar reunión</button></a>
-      </div>
       {/*<div className={styles.SliderBrands}>
         <SliderBrands />
       </div>*/}

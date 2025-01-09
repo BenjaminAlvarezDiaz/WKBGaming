@@ -48,7 +48,7 @@ function ServicesGridView (){
             Dejá que la IA conecte cada etapa para un proceso fluido."
         },
         { 
-            title: "Aumento de personal: productividad en su máxima expresión",
+            title: "Aumento de personal: productividad",
             description: 
             "Automatizá las tareas más tediosas de tu equipo, \
             ahorrando horas diarias y, en algunos casos, \
@@ -70,25 +70,27 @@ function ServicesGridView (){
     ];
 
     return (
-        <div className={styles.container}>
+        <div>
             <HeaderCanvasBackground />
-            <div className={styles.services}>
-                <h1>Servicios</h1>
-            </div>
-            <p className={styles.servicesDescription}>
-                Los infinitos casos de uso de la IA y la automatización
-                Nuestros clientes hacen que sus empleados sean 10 veces más eficientes al 
-                eliminar tareas tediosas y repetitivas. Somos independientes de la industria.
-            </p>
-            <div className={styles.gridContainer}>
-            {servicesArray.map((item, index) => (
-                <div key={index} className={styles.gridItem}>
-                    <div className={styles.content}>
-                        <h3 className={styles.title}>{item.title}</h3>
-                        <p className={styles.description}>{item.description}</p>
-                    </div>
+            <div className={styles.container}>
+                <div className={styles.services}>
+                    <h1>Servicios</h1>
                 </div>
-            ))}
+                <p className={styles.servicesDescription}>
+                    Los infinitos casos de uso de la IA y la automatización
+                    Nuestros clientes hacen que sus empleados sean 10 veces más eficientes al 
+                    eliminar tareas tediosas y repetitivas. Somos independientes de la industria.
+                </p>
+                <div className={styles.gridContainer}>
+                {servicesArray.map((item, index) => (
+                    <div key={index} className={styles.gridItem}>
+                        <div className={styles.content}>
+                            <h3 className={styles.title}>{item.title}</h3>
+                            <p className={styles.description}>{item.description}</p>
+                        </div>
+                    </div>
+                ))}
+                </div>
             </div>
         </div>
     );

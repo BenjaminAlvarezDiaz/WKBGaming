@@ -58,7 +58,7 @@
   align-items: center;
   justify-content: center;
   margin: 0 auto;
-  padding: 15vh 0vh 0vh 0vh;
+  padding: 2vh 0vh 0vh 0vh;
 
   /*  background: linear-gradient(
     159deg,
@@ -223,7 +223,7 @@
   background-position: center top; /* Ajusta la posición de la imagen */
   overflow: hidden;
   width: 100%;
-  padding: 7em 0em 7em 0em;
+  padding: 4em 0em 4em 0em;
 }
 
 .btnMeeting {
@@ -232,14 +232,15 @@
 .btnMeeting button {
   display: inline-block;
   padding: 10px 20px;
-  margin-top: 150px;
-  background-color: #7ec219;
+  margin-top: 80px;
+  background-color: transparent;
   color: #fff;
   text-decoration: none;
-  border-radius: 100px;
-  font-size: 2rem;
-  border: #793dea;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  border: 2px solid white;
   animation: shine 2s infinite;
+  cursor: pointer;
 }
 
 @keyframes shine {
@@ -332,7 +333,7 @@
   }
 
   .allServices {
-    width: 80%;
+    width: 60%;
 
     gap: 10px;
     padding: 0;
@@ -340,6 +341,7 @@
 
   .allServices h2 {
     padding: 3vh 0vh 3vh 0vh;
+    font-size: 1.8rem;
   }
 }
 
@@ -362,7 +364,7 @@
     padding: 1rem 0rem;
   }
   .allServices {
-    width: 100%;
+    width: 60%;
     gap: 10px;
     padding: 0;
   }
@@ -423,7 +425,7 @@
   }
 
   .allServices h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .SliderImg h1 {
     font-size: 1.5rem;
