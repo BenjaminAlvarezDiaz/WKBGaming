@@ -47,13 +47,14 @@ title h1::after {
   animation: fadeIn 1.2s ease-in-out;
 }
 
-.title2 h1::after {
+.subTitle h2::after {
   content: "";
   display: block;
-  width: 70%;
-  height: 4.5px;
+  width: 60%;
+  height: 3.5px;
+  padding: 0px;
   background-color: #7EC219;
-  animation: fadeIn 1.2s ease-in-out;
+  animation: fadeInh2 1.2s ease-in-out;
 }
 
 .text {
@@ -62,7 +63,7 @@ title h1::after {
   justify-content: center;
   align-items: flex-start;
   width: 100%;
-  text-align: center;
+  text-align: left;
   padding: 0 2rem;
 }
 
@@ -91,6 +92,16 @@ title h1::after {
     width: 70%;
   }
 }
+@keyframes fadeInh2 {
+  from {
+    opacity: 0;
+    width: 0%;
+  }
+  to {
+    opacity: 1;
+    width: 60%;
+  }
+}
 
 .myCanvas {
   position: absolute;
@@ -101,6 +112,31 @@ title h1::after {
   z-index: -1;
 }
 
+.btnMeeting {
+}
+
+.btnMeeting button {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-top: 20px;
+  background-color: transparent;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  border: 2px solid white;
+  animation: shine 2s infinite;
+  cursor: pointer;
+}
+
+@keyframes shine {
+  0%, 100% {
+    box-shadow: 0 0 0 0 rgba(126, 194, 25, 0.934);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(126, 194, 25, 0.934);
+  }
+}
 
 @media only screen and (max-width: 1600px) {
   .about{
@@ -111,6 +147,9 @@ title h1::after {
   }
   title, .title2 {
     font-size: 1rem;
+  }
+  .subTitle h2 {
+    padding: 0px;
   }
 }
 
@@ -123,6 +162,9 @@ title h1::after {
   }
   title, .title2 {
     font-size: 0.9rem;
+  }
+  .subTitle h2 {
+    padding: 0px;
   }
 }
 
@@ -138,7 +180,9 @@ title h1::after {
   }
   .agency img {
     width:40%;
-  
+  }
+  .subTitle h2 {
+    padding: 0px;
   }
 }
 
@@ -158,7 +202,9 @@ title h1::after {
   title, .title2 {
     font-size: 0.5rem;
   }
-  
+  .subTitle h2 {
+    padding: 0px;
+  }
 }
 
 /*@media only screen and (max-width: 650px) {
@@ -181,6 +227,10 @@ title h1::after {
   }
   .title2{
     padding: 0em 0em 0em 4em;
+  }
+  
+  .subTitle h2 {
+    padding: 0px;
   }
 }
 
@@ -207,5 +257,9 @@ title h1::after {
 
   title, .title2{
     font-size: 0.4rem;
+  }
+
+  .subTitle h2 {
+    padding: 0px;
   }
 }

@@ -11,6 +11,7 @@ import CanvasBackground from "../CanvasBackground";
 import SwaiperTools from "./SwiperTools";
 import SwiperIcons from "./SwiperIcons";
 import Announcement from "./Announcement"
+import Steps from "./Steps";
 const Home = () => {
   return (
     <div>
@@ -86,6 +87,8 @@ const Home = () => {
         <h2>Nuestros servicios</h2>
         <ServiceCard />
       </div>
+
+      <Steps/>
 
       {/*<div className={styles.SliderImg}>
         <SliderImg />

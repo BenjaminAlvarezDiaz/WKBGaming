@@ -1,0 +1,41 @@
+.steps {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding-top: 80px;
+    padding-inline: 80px;
+    position: relative;
+}
+
+.item {
+    z-index: 2;
+}
+
+.step1,
+.step2,
+.step3,
+.step4 {
+    align-content: center;
+    justify-self: center;
+    background-color: #151515;
+    color: #7ec219;
+    padding: 15px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+}
+
+.lineArray {
+    z-index: 1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.lineIcon {
+    padding-top: 15px;
+    align-content: start;
+    color: #151515;
+    font-size: 10px;
+    width: 100%;
+}
