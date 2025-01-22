@@ -4,6 +4,7 @@ import Bear from "../../assets/bear 1.png";
 import Bear2 from "../../assets/bear_1-removebg-preview.png";
 import CardTeam from "./CardTeam";
 import CanvasBackground from "../CanvasBackground";
+import SwiperLogos from "./SwiperLogos";
 
 const About = () => {
   return (
@@ -32,10 +33,14 @@ const About = () => {
         </div>
         <img src={Bear2} alt="bear" />
       </div>
+      <div className={styles.swiperLogos}>
+        <h2>Ellos {" "} <span className={styles.highlight}>confiaron</span></h2>
+        <SwiperLogos/>
+      </div>
       <div>
         <h1>¿ Estás listo para dar un salto a la innovación ?</h1>
         <div>
-          <a  href="https://wkbmeet.com/" className={styles.btnMeeting}> <button>Programar reunión</button></a>
+          <a  href="https://calendly.com/wkbgroup/meeting" className={styles.btnMeeting}> <button>Programar reunión</button></a>
         </div>
       </div>
       

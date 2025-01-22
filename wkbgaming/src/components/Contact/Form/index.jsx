@@ -33,6 +33,7 @@ export const Forms = () => {
       )
       .then(
         (result) => {
+          
           console.log("Mensaje enviado", result.text);
         },
         (error) => {

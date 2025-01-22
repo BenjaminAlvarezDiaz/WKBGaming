@@ -34,14 +34,14 @@ const Navbar = () => {
           {/* <li>
             <a href="/blog">Blog</a>
           </li> */}
-          <li>
+          {/*<li>
             <a href="/contact" className={Style.contact}>
               <HiOutlineMail  />
               <span>Contacto</span>
             </a>
-          </li>
+          </li>*/}
           <li>
-            <a href="https://wkbmeet.com/" className={Style.meeting}>
+            <a href="https://calendly.com/wkbgroup/meeting" className={Style.meeting}>
               <span>Reunión</span>
             </a>
           </li>

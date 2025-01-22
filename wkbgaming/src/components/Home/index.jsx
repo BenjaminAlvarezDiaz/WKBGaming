@@ -42,7 +42,7 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <a  href="https://wkbmeet.com/" className={styles.btnMeeting}> <button>Programar reunión</button></a>
+        <a  href="https://calendly.com/wkbgroup/meeting" className={styles.btnMeeting}> <button>Programar reunión</button></a>
       </div>
       <article className={styles.article}>
         <div className={styles.textcontainer}>
@@ -96,11 +96,11 @@ const Home = () => {
       {/*<div className={styles.SliderBrands}>
         <SliderBrands />
       </div>*/}
-      {/* <div>
+      {/*<div>
         <SwiperBrands />
       </div> */}
       <div className={styles.contact}>
-        <Contact />
+        {/*<Contact />*/}
       </div>
     </div>
   );

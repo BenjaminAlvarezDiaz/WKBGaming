@@ -7,6 +7,7 @@ function ServicesGridView (){
 
     const servicesArray = [
         { 
+            src: "src/assets/ServicesGridViewIcons/iconosWeb01.png",
             title: "Servicio al cliente: eficiencia sin esfuerzo",
             description: 
             "La mayoría de las consultas de atención al cliente son repetitivas. \
@@ -14,13 +15,15 @@ function ServicesGridView (){
             optimizar tiempos y liberar a tu equipo para tareas más estratégicas."
         },
         { 
-            title: "Automatización de ventas y marketing: cerrá más negocios, más rápido",
+            src: "src/assets/ServicesGridViewIcons/iconosWeb02.png",
+            title: "Automatización de marketing",
             description: 
             "Desde la creación de contenido y embudos de ventas completos, \
             hasta la gestión de CRM, pagos y contratos. \
             La IA simplifica cada etapa del proceso para que no pierdas oportunidades."
         },
         { 
+            src: "src/assets/ServicesGridViewIcons/iconosWeb03.png",
             title: "Reconocimiento y análisis de datos inteligentes",
             description: 
             "Analizá documentos, imágenes, voz y texto de forma precisa. \
@@ -28,12 +31,14 @@ function ServicesGridView (){
             para automatizar acciones o generar resúmenes útiles en segundos."
         },
         { 
+            src: "src/assets/ServicesGridViewIcons/iconosWeb04.png",
             title: "Análisis predictivo: decisiones basadas en datos",
             description: 
             "Optimizá la planificación futura con predicciones de riesgos, \
             demanda o inventarios, permitiendo decisiones más informadas y estrategias eficientes."
         },
         { 
+            src: "src/assets/ServicesGridViewIcons/iconosWeb05.png",
             title: "IA conversacional: comunicación ágil",
             description: 
             "Implementá chatbots avanzados, \
@@ -41,27 +46,31 @@ function ServicesGridView (){
             ventas y marketing. Mejorá la experiencia del usuario 24/7."
         },
         { 
-            title: "Gestión de proyectos: conectá y automatizá flujos",
+            src: "src/assets/ServicesGridViewIcons/iconosWeb06.png",
+            title: "Procesos automáticos",
             description: 
             "Eliminá los pasos manuales en tareas como administración, contabilidad, \
             facturación o incorporación de personal. \
             Dejá que la IA conecte cada etapa para un proceso fluido."
         },
         { 
-            title: "Aumento de personal: productividad",
+            src: "src/assets/ServicesGridViewIcons/iconosWeb07.png",
+            title: "Agentes IA internos",
             description: 
             "Automatizá las tareas más tediosas de tu equipo, \
             ahorrando horas diarias y, en algunos casos, \
             reemplazando la necesidad de asistentes virtuales."
         },
         { 
+            src: "src/assets/ServicesGridViewIcons/iconosWeb08.png",
             title: "Optimización de silos de datos",
             description: 
             "Recopilamos, limpiamos y consolidamos información de diferentes fuentes aisladas, \
             acelerando la generación de reportes y mejorando la precisión en la toma de decisiones."
         },
         { 
-            title: "Integración de aplicaciones: hacé que todo trabaje junto",
+            src: "src/assets/ServicesGridViewIcons/iconosWeb09.png",
+            title: "Integración de aplicaciones",
             description: 
             "Conectamos tus herramientas digitales para sincronizar datos en tiempo real y \
             consolidar la información en un solo lugar. La automatización, \
@@ -85,6 +94,7 @@ function ServicesGridView (){
                 {servicesArray.map((item, index) => (
                     <div key={index} className={styles.gridItem}>
                         <div className={styles.content}>
+                            <img className={styles.img} src={item.src} alt={index}/>
                             <h3 className={styles.title}>{item.title}</h3>
                             <p className={styles.description}>{item.description}</p>
                         </div>

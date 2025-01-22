@@ -22,7 +22,7 @@ function SwiperIcons () {
         "src/assets/Icons/linkedIn.svg", "src/assets/Icons/zendesk.svg",
         "src/assets/Icons/mailchimp.png", "src/assets/Icons/microsoftExcel.svg",
         "src/assets/Icons/wekan.svg", "src/assets/Icons/coinGecko.svg",
-
+    
         "src/assets/Icons/microsoftOutlook.svg", "src/assets/Icons/microsoftTeams.svg",
         "src/assets/Icons/notion.png", "src/assets/Icons/npm.svg",
         "src/assets/Icons/openAi.png", "src/assets/Icons/payPal.svg",
@@ -49,17 +49,38 @@ function SwiperIcons () {
                         disableOnInteraction: false,
                         pauseOnMouseEnter: true,
                     }}
-                    slidesPerView={9}
+                    breakpoints={{
+                        320: {
+                            slidesPerView: 6
+                        },
+                        768: {
+                            slidesPerView: 6
+                        },
+                        1000: {
+                            slidesPerView: servicesArray.length>=14? 9 : servicesArray.length/2
+                        }
+                    }}
                     speed={3000}
                 >
-                    {servicesArray? servicesArray.map((item, index) => (
-                        index<=26? 
-                        (
-                            <SwiperSlide>
-                                <img src={item} alt=""/>
-                            </SwiperSlide>
-                        ) : null
-                    )) : null}
+                    {servicesArray? servicesArray.length>=14? 
+                        (servicesArray.map((item, index) => (
+                            index<=servicesArray.length/2? 
+                            (
+                                <SwiperSlide key={index}>
+                                    <img src={item} alt=""/>
+                                </SwiperSlide>
+                            ) : null
+                        )))
+                    : 
+                        (servicesArray.map((item, index) => (
+                            index<=servicesArray.length? 
+                            (
+                                <SwiperSlide key={index}>
+                                    <img src={item} alt=""/>
+                                </SwiperSlide>
+                            ) : null
+                        )))
+                    : null}
                     {/*<SwiperSlide><img src={"src/assets/Icons/icon_1.png"} alt="" /></SwiperSlide>
                     <SwiperSlide><img src={"src/assets/Icons/icon_2.png"} alt="" /></SwiperSlide>
                     <SwiperSlide><img src={"src/assets/Icons/icon_3.png"} alt="" /></SwiperSlide>
@@ -96,45 +117,58 @@ function SwiperIcons () {
                     </SwiperSlide>*/}
                 </Swiper>
             </div>
-            <div className={styles.rectangle}>
-                <Swiper
-                    className="sample-slider"
-                    modules={[Autoplay]}
-                    loop={true}
-                    autoplay={{
-                        delay:0,
-                        pauseOnMouseEnter: true,
-                        disableOnInteraction: false,
-                        reverseDirection: true,
-                    }}
-                    slidesPerView={9}
-                    speed={3000}
-                >
-                    {servicesArray? servicesArray.map((item, index) => (
-                        index>=26? 
-                            <SwiperSlide>
-                                <img src={item} alt=""/>
-                            </SwiperSlide>
-                        : null
-                    )) : null}
-                    {/*<SwiperSlide><img src={"src/assets/Icons/icon_15.png"} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={"src/assets/Icons/icon_16.png"} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={"src/assets/Icons/icon_17.png"} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={"src/assets/Icons/icon_18.png"} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={"src/assets/Icons/icon_19.png"} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={"src/assets/Icons/icon_20.png"} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={"src/assets/Icons/icon_21.png"} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={"src/assets/Icons/icon_22.png"} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={"src/assets/Icons/icon_23.png"} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={"src/assets/Icons/icon_24.png"} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={"src/assets/Icons/icon_25.png"} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={"src/assets/Icons/icon_26.png"} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={"src/assets/Icons/icon_27.png"} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={"src/assets/Icons/icon_28.png"} alt="" /></SwiperSlide>*/}
-                    {/*<SwiperSlide><img src={icons3} alt="" /></SwiperSlide>
-                    <SwiperSlide><img src={icons4} alt="" /></SwiperSlide>*/}
-                </Swiper>
-            </div>
+            {servicesArray.length >= 14?
+                (<div className={styles.rectangle}>
+                    <Swiper
+                        className="sample-slider"
+                        modules={[Autoplay]}
+                        loop={true}
+                        autoplay={{
+                            delay:0,
+                            pauseOnMouseEnter: true,
+                            disableOnInteraction: false,
+                            reverseDirection: true,
+                        }}
+                        breakpoints={{
+                            320: {
+                                slidesPerView: 6
+                            },
+                            768: {
+                                slidesPerView: 6
+                            },
+                            1000: {
+                                slidesPerView: servicesArray.length>=14? 9 : servicesArray.length/2
+                            }
+                        }}
+                        speed={3000}
+                    >
+                        {servicesArray? servicesArray.map((item, index) => (
+                            index>=servicesArray.length/2? 
+                                <SwiperSlide key={index}>
+                                    <img src={item} alt=""/>
+                                </SwiperSlide>
+                            : null
+                        )) : null}
+                        {/*<SwiperSlide><img src={"src/assets/Icons/icon_15.png"} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={"src/assets/Icons/icon_16.png"} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={"src/assets/Icons/icon_17.png"} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={"src/assets/Icons/icon_18.png"} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={"src/assets/Icons/icon_19.png"} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={"src/assets/Icons/icon_20.png"} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={"src/assets/Icons/icon_21.png"} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={"src/assets/Icons/icon_22.png"} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={"src/assets/Icons/icon_23.png"} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={"src/assets/Icons/icon_24.png"} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={"src/assets/Icons/icon_25.png"} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={"src/assets/Icons/icon_26.png"} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={"src/assets/Icons/icon_27.png"} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={"src/assets/Icons/icon_28.png"} alt="" /></SwiperSlide>*/}
+                        {/*<SwiperSlide><img src={icons3} alt="" /></SwiperSlide>
+                        <SwiperSlide><img src={icons4} alt="" /></SwiperSlide>*/}
+                    </Swiper>
+                </div>
+                ) : null
+            }
         </div>
     );
 }

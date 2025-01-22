@@ -10,7 +10,7 @@
 
 .rectangle {
     position: relative;
-    width: 70%;
+    width: 1200px;
     border-radius: 10px;
     overflow: hidden;
     background-color: #151515;

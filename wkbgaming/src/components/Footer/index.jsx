@@ -12,7 +12,7 @@ const Footer = () => {
       <div className={styles.wkb}>
         <img src={Bear} alt="logo" />
         <p>
-          Copyright ©2023 <br /> WKB GROUP
+          Copyright ©2025 <br /> WKB GROUP
         </p>
       </div>
       <div className={styles.socialMobile}>
@@ -38,7 +38,7 @@ const Footer = () => {
           </a>
         </div>
         <p>
-          Copyright ©2023 WKB GAMING
+          Copyright ©2025 WKB GAMING
         </p>
       </div>
       <div className={styles.container}>

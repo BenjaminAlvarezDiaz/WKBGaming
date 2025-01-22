@@ -1,0 +1,72 @@
+.rectangle {
+
+}
+
+.rectangle img {
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+    object-position: center;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    width: 100%;
+    padding: 0.5rem 1rem;
+}
+
+.swiperSlide {
+    object-position: center;
+    justify-items: center;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    object-fit: cover;
+    padding: 40px 20px;
+}
+
+.swiperSlideAfa img {
+    object-position: center;
+    justify-items: center;
+    object-fit: cover;
+    justify-content: center;
+    justify-self: center;
+    align-self: center;
+    align-items: center;
+    padding: 80px 0px;
+    height: auto;
+    width: auto;
+}
+
+.swiperSlideAfa {
+}
+
+@media only screen and (max-width: 1600px) {
+    .swiperSlide {
+        object-position: center;
+        justify-items: center;
+        justify-content: center;
+        justify-self: center;
+        align-self: center;
+        align-items: center;
+        object-fit: cover;
+        padding: 20px 10px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .rectangle {
+        width: 100%;
+    }
+    .swiperSlide {
+        padding: 10px 5px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .swiperSlide {
+        padding: 0px 0px;
+    }
+}
