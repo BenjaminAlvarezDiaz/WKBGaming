@@ -4,17 +4,30 @@ import styles from "./SwiperLogos.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 
+import eramet from "../../../assets/AboutUsLogos/eramet.png";
+import lilac from "../../../assets/AboutUsLogos/lilac.png";
+import argentinamining from "../../../assets/AboutUsLogos/argentinamining.png";
+import saltagobierno from "../../../assets/AboutUsLogos/saltagobierno.png";
+import catamarcagobierno from "../../../assets/AboutUsLogos/catamarcagobierno.png";
+import municipalidaddelarioja from "../../../assets/AboutUsLogos/municipalidaddelarioja.png";
+import GobiernoAMLP from "../../../assets/AboutUsLogos/GAMLP.png";
+import sony from "../../../assets/AboutUsLogos/sony.png";
+import afa1 from "../../../assets/AboutUsLogos/afa1.png";
+import nivelseguros from "../../../assets/AboutUsLogos/nivelseguros.png";
+import enerby from "../../../assets/AboutUsLogos/enerby.png";
+import volkswagen from "../../../assets/AboutUsLogos/volkswagen.png";
+
 import "swiper/css";
 import "swiper/css/pagination";
 
 function SwiperLogos () {
     const branchs = [
-        "src/assets/AboutUsLogos/eramet.png", "src/assets/AboutUsLogos/lilac.png",
-        "src/assets/AboutUsLogos/argentinamining.png", "src/assets/AboutUsLogos/saltagobierno.png",
-        "src/assets/AboutUsLogos/catamarcagobierno.png", "src/assets/AboutUsLogos/municipalidaddelarioja.png",
-        "src/assets/AboutUsLogos/GAMLP.png", "src/assets/AboutUsLogos/sony.png",
-        "src/assets/AboutUsLogos/afa1.png", "src/assets/AboutUsLogos/nivelseguros.png",
-        "src/assets/AboutUsLogos/enerby.png", "src/assets/AboutUsLogos/volkswagen.png"
+        eramet, lilac,
+        argentinamining, saltagobierno,
+        catamarcagobierno, municipalidaddelarioja,
+        GobiernoAMLP, sony,
+        afa1, nivelseguros,
+        enerby, volkswagen
     ];
     return (
         <div className={styles.rectangle}>

@@ -2,6 +2,7 @@
 .container {
     padding: 40px;
     justify-items: center;
+    display: grid;
 }
 
 .services {

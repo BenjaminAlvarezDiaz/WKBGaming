@@ -4,38 +4,93 @@ import styles from "./SwiperIcons.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Autoplay, Pagination } from "swiper";
 
+import activeCampaign from "../../../assets/Icons/activeCampaign.svg";
+import adalo from "../../../assets/Icons/adalo.svg";
+import airtable from "../../../assets/Icons/airtable.svg";
+import awsLambda from "../../../assets/Icons/awsLambda.svg";
+import cortex from "../../../assets/Icons/cortex.svg";
+import crowdDev from "../../../assets/Icons/crowdDev.png";
+import debugHelper from "../../../assets/Icons/debugHelper.svg";
+import dropbox from "../../../assets/Icons/dropbox.svg";
+import embeddingsAzureOpenAi from "../../../assets/Icons/embeddingsAzureOpenAi.svg";
+import facebookGraphApi from "../../../assets/Icons/facebookGraphApi.svg";
+import git from "../../../assets/Icons/git.svg";
+import github from "../../../assets/Icons/github.png";
+import gitlab from "../../../assets/Icons/gitlab.svg";
+import linkedIn from "../../../assets/Icons/linkedIn.svg";
+import googleFirebaseRealtimeDatabase from "../../../assets/Icons/googleFirebaseRealtimeDatabase.svg";
+import html from "../../../assets/Icons/html.svg";
+import ciscoWebex from "../../../assets/Icons/ciscoWebex.png";
+import contentful from "../../../assets/Icons/contentful.png";
+import mySql from "../../../assets/Icons/mySql.svg";
+import googleFirebaseCloudFirestore from "../../../assets/Icons/googleFirebaseCloudFirestore.png";
+import travisCi from "../../../assets/Icons/travisCi.png";
+import zendesk from "../../../assets/Icons/zendesk.svg";
+import mailchimp from "../../../assets/Icons/mailchimp.png";
+import microsoftExcel from "../../../assets/Icons/microsoftExcel.svg";
+import wekan from "../../../assets/Icons/wekan.svg";
+import coinGecko from "../../../assets/Icons/coinGecko.svg";
+
+import microsoftOutlook from "../../../assets/Icons/microsoftOutlook.svg";
+import microsoftTeams from "../../../assets/Icons/microsoftTeams.svg";
+import notion from "../../../assets/Icons/notion.png";
+import npm from "../../../assets/Icons/npm.svg";
+import openAi from "../../../assets/Icons/openAi.png";
+import payPal from "../../../assets/Icons/payPal.svg";
+import pipedrive from "../../../assets/Icons/pipedrive.svg";
+import postgres from "../../../assets/Icons/postgres.svg";
+import reddit from "../../../assets/Icons/reddit.svg";
+import seaTable from "../../../assets/Icons/seaTable.svg";
+import shopify from "../../../assets/Icons/shopify.svg";
+import slack from "../../../assets/Icons/slack.svg";
+import spotify from "../../../assets/Icons/spotify.svg";
+import supabase from "../../../assets/Icons/supabase.svg";
+import telegram from "../../../assets/Icons/telegram.svg";
+import toolHttpRequest from "../../../assets/Icons/toolHttpRequest.svg";
+import mailjet from "../../../assets/Icons/mailjet.svg";
+import dhl from "../../../assets/Icons/dhl.svg";
+import trello from "../../../assets/Icons/trello.svg";
+import twitter from "../../../assets/Icons/twitter.png";
+import whatsApp from "../../../assets/Icons/whatsApp.svg";
+import wordpress from "../../../assets/Icons/wordpress.svg";
+import youTube from "../../../assets/Icons/youTube.png";
+import lmChatOpenAi from "../../../assets/Icons/lmChatOpenAi.svg";
+import zoom from "../../../assets/Icons/zoom.svg";
+import zulip from "../../../assets/Icons/zulip.svg";
+
+
 import "swiper/css";
 import "swiper/css/pagination";
 
 function SwiperIcons () {
     const servicesArray = [
-        "src/assets/Icons/activeCampaign.svg", "src/assets/Icons/adalo.svg",
-        "src/assets/Icons/airtable.svg", "src/assets/Icons/awsLambda.svg",
-        "src/assets/Icons/cortex.svg", "src/assets/Icons/crowdDev.svg",
-        "src/assets/Icons/debugHelper.svg", "src/assets/Icons/dropbox.svg",
-        "src/assets/Icons/embeddingsAzureOpenAi.svg", "src/assets/Icons/facebookGraphApi.svg",
-        "src/assets/Icons/git.svg", "src/assets/Icons/github.svg",
-        "src/assets/Icons/gitlab.svg", "src/assets/Icons/linkedIn.svg",
-        "src/assets/Icons/googleFirebaseRealtimeDatabase.svg", "src/assets/Icons/html.svg",
-        "src/assets/Icons/ciscoWebex.png", "src/assets/Icons/contentful.png",
-        "src/assets/Icons/mySql.svg", "src/assets/Icons/googleFirebaseCloudFirestore.png",
-        "src/assets/Icons/linkedIn.svg", "src/assets/Icons/zendesk.svg",
-        "src/assets/Icons/mailchimp.png", "src/assets/Icons/microsoftExcel.svg",
-        "src/assets/Icons/wekan.svg", "src/assets/Icons/coinGecko.svg",
+        activeCampaign, adalo,
+        airtable, awsLambda,
+        cortex, crowdDev,
+        debugHelper, dropbox,
+        embeddingsAzureOpenAi, facebookGraphApi,
+        git, github,
+        gitlab, linkedIn,
+        googleFirebaseRealtimeDatabase, html,
+        ciscoWebex, contentful,
+        mySql, googleFirebaseCloudFirestore,
+        travisCi, zendesk,
+        mailchimp, microsoftExcel,
+        wekan, coinGecko,
     
-        "src/assets/Icons/microsoftOutlook.svg", "src/assets/Icons/microsoftTeams.svg",
-        "src/assets/Icons/notion.png", "src/assets/Icons/npm.svg",
-        "src/assets/Icons/openAi.png", "src/assets/Icons/payPal.svg",
-        "src/assets/Icons/pipedrive.svg", "src/assets/Icons/postgres.svg",
-        "src/assets/Icons/reddit.svg", "src/assets/Icons/seaTable.svg",
-        "src/assets/Icons/shopify.svg", "src/assets/Icons/slack.svg",
-        "src/assets/Icons/spotify.svg", "src/assets/Icons/supabase.svg",
-        "src/assets/Icons/telegram.svg", "src/assets/Icons/toolHttpRequest.svg",
-        "src/assets/Icons/mailjet.svg", "src/assets/Icons/dhl.svg",
-        "src/assets/Icons/trello.svg", "src/assets/Icons/twitter.png",
-        "src/assets/Icons/whatsApp.svg", "src/assets/Icons/wordpress.svg",
-        "src/assets/Icons/youTube.png", "src/assets/Icons/lmChatOpenAi.svg",
-        "src/assets/Icons/zoom.svg", "src/assets/Icons/zulip.svg",
+        microsoftOutlook, microsoftTeams,
+        notion, npm,
+        openAi, payPal,
+        pipedrive, postgres,
+        reddit, seaTable,
+        shopify, slack,
+        spotify, supabase,
+        telegram, toolHttpRequest,
+        mailjet, dhl,
+        trello, twitter,
+        whatsApp, wordpress,
+        youTube, lmChatOpenAi,
+        zoom, zulip,
     ];
     return (
         <div className={styles.rectangles}>

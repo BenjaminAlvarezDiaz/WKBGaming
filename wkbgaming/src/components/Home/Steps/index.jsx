@@ -1,5 +1,9 @@
 import React from "react";
 import styles from "./Steps.module.css";
+import step1 from "../../../assets/StepsGifts/list.gif";
+import step2 from "../../../assets/StepsGifts/search.gif";
+import step3 from "../../../assets/StepsGifts/tool.gif";
+import step4 from "../../../assets/StepsGifts/check.gif";
 
 function Steps (){
     const lineArray = Array.from({ length: 40 }, () => "horizontal_rule");
@@ -12,7 +16,7 @@ function Steps (){
                         {/*<span className={`material-icons ${styles.icon}`}>format_list_bulleted</span>*/
                         <img 
                             className={styles.image}
-                            src="src/assets/StepsGifts/list.gif" 
+                            src={step1} 
                             alt="animation"
                         />
                         }
@@ -25,7 +29,7 @@ function Steps (){
                         {/*<span className={`material-icons ${styles.icon}`}>search</span>*/
                         <img 
                             className={styles.image}
-                            src="src/assets/StepsGifts/search.gif" 
+                            src={step2} 
                             alt="animation"
                         />
                         }
@@ -38,7 +42,7 @@ function Steps (){
                         {/*<span className={`material-icons ${styles.icon}`}>handyman</span>*/
                         <img 
                             className={styles.image}
-                            src="src/assets/StepsGifts/tool.gif" 
+                            src={step3} 
                             alt="animation"
                         />
                         }
@@ -51,7 +55,7 @@ function Steps (){
                         {/*<span className={`material-icons ${styles.icon}`}>check</span>*/
                         <img 
                             className={styles.image}
-                            src="src/assets/StepsGifts/check.gif" 
+                            src={step4} 
                             alt="animation"
                         />
                         }

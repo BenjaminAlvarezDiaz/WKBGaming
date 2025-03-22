@@ -14,10 +14,10 @@ import Announcement from "./components/Home/Announcement"
 import ServicesGridView from "./components/ServicesGridView";
 
 function App() {
-  console.log("Developed by:Luis Fernando Goytia Cabezas {Full Stack Developer}");
+  /*console.log("Developed by:Luis Fernando Goytia Cabezas {Full Stack Developer}");
   console.log("Email:luisgoytia.dev@gmail.com");
   console.log("Phone:+549 3872 277 407");
-  console.log("Design and photography by:WKB Gaming")
+  console.log("Design and photography by:WKB Gaming")*/
   return (
     <main className="App">
       <Router>
@@ -29,8 +29,8 @@ function App() {
             {/*<Route path="/services" element={<Services />} />*/}
             <Route path="/services" element={<ServicesGridView />} />
             <Route path="/about" element={<About />} />
-            <Route path="/experience" element={<Experience />} />
-            <Route path="/contact" element={<Contact />} />
+            {/*<Route path="/experience" element={<Experience />} />*/}
+            {/*<Route path="/contact" element={<Contact />} />*/}
             {/* <Route path="/blog" element={<Blog />} /> */}
             {/* <Route path="/admin" element={<Admin />} /> */}
             <Route path="/privacypolicy" element={<Privacy/>}/>
